@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Result</title>
+</head>
+<body>
+    <div class="background">
+        <div class="firstt">
+        <h1 class="h11">Tumor Classifier</h1>
+        <h4 class="h22">by Support</h4> 
+        </div>
+        <div class="resu">
+        <h1 class="result" >Result : {{ prediction }} </h1>
+        </div>
+        <!--<p>{{ prediction }}</p> -->
+        <img class="xr" ,  src="{{ url_for('static', filename='images/xray.png') }}" >
+        <img class="doc" ,   src="{{ url_for('static', filename='images/doctor.png') }}" ,  height="500px">
+        
+    </div>
+</body>
+</html>
